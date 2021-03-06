@@ -53,7 +53,7 @@ int main()
 		}
 		else
 		{
-			outputFile << std::to_string(decompose(givenNumber)) << "\n----------------\n";
+			outputFile << std::to_string(static_cast<int>(decompose(givenNumber))) << "\n----------------\n";
 		}
 
 		inputFile.close();
@@ -98,7 +98,7 @@ size_t decompose(long long  number)
 
 			multipliersSequence += std::to_string(multiplier);
 
-			if(tempNumber > 10) if (isPrime(tempNumber)) return int(-1);
+			if(tempNumber > 10) if (isPrime(tempNumber)) return -1;
 		}
 		else
 		{
