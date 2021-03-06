@@ -176,7 +176,7 @@ size_t findTheSmallestNumber(int *&digitArray, int arraySize)
 			newDigitArray[j] = temp;
 		}
 
-		step--;
+		step /= 2;
 	}
 
 	//--translating into a number--
